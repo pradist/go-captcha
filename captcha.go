@@ -8,5 +8,8 @@ func captcha(pattern int, leftOperand int, operator int, rightOperand int) strin
 	if rightOperand == 2 {
 		return strconv.Itoa(leftOperand) + " + Two"
 	}
+	if rightOperand == 3 {
+		return strconv.Itoa(leftOperand) + " + Three"
+	}
 	return strconv.Itoa(leftOperand) + " + One"
 }
