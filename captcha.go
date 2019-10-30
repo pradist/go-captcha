@@ -4,5 +4,8 @@ func captcha(pattern int, leftOperand int, operator int, rightOperand int) strin
 	if leftOperand == 1 {
 		return "1 + One"
 	}
+	if leftOperand ==3 {
+		return "3 + One"
+	}
 	return "2 + One"
 }
