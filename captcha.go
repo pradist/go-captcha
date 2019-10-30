@@ -5,11 +5,6 @@ import (
 )
 
 func captcha(pattern int, leftOperand int, operator int, rightOperand int) string  {
-	if rightOperand == 2 {
-		return strconv.Itoa(leftOperand) + " + Two"
-	}
-	if rightOperand == 3 {
-		return strconv.Itoa(leftOperand) + " + Three"
-	}
-	return strconv.Itoa(leftOperand) + " + One"
+	numbers := []string{"One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine"}
+	return strconv.Itoa(leftOperand) + " + " + numbers[rightOperand - 1]
 }
