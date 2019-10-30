@@ -15,6 +15,7 @@ func Test_Captcha(t *testing.T) {
 		want string
 	}{
 		{name: "captcha_whenPatternIs1_leftOperandIs1_operatorIs1_rightOperandIs1_ShouldReturn1PlusOne", args: args{1, 1, 1, 1}, want: "1 + One"},
+		{name: "captcha_whenPatternIs1_leftOperandIs1_operatorIs1_rightOperandIs1_ShouldReturn1PlusOne", args: args{1, 2, 1, 1}, want: "2 + One"},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
